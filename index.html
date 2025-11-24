@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joki Tiket VideoCall, Meet n Greet, 2-Shot JKT48 - Terpercaya dan Aman">
+    <meta name="keywords" content="joki tiket, jkt48, video call, meet and greet, 2-shot">
+    <title>Joki Hal - Joki Tiket JKT48</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Slick Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <i class="fas fa-ticket-alt"></i> Joki Hal
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Beranda</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#timetable">TimeTable</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#testimoni">Testimoni</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#orderModal">Form Pemesanan</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="logo-circle">
+                <h1>JH</h1>
+            </div>
+            <h2 class="slogan">Joki Tiket VideoCall, Meet n Greet, 2-Shot JKT48</h2>
+            <button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#orderModal">
+                <i class="fas fa-clipboard-list"></i> Pesan Sekarang
+            </button>
+        </div>
+    </section>
+
+    <!-- TimeTable Section -->
+    <section id="timetable">
+        <div class="container">
+            <h2 class="section-title">TimeTable Acara</h2>
+            <div class="timetable-slider">
+                <div>
+                    <img src="assets/images/timetable1.jpg" alt="TimeTable 1">
+                </div>
+                <div>
+                    <img src="assets/images/timetable2.jpg" alt="TimeTable 2">
+                </div>
+                <div>
+                    <img src="assets/images/timetable3.jpg" alt="TimeTable 3">
+                </div>
+                <div>
+                    <img src="assets/images/timetable4.jpg" alt="TimeTable 4">
+                </div>
+                <div>
+                    <img src="assets/images/timetable5.jpg" alt="TimeTable 5">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section id="testimoni" class="testimoni-section">
+        <div class="container">
+            <h2 class="section-title">Testimoni Customer</h2>
+            <div class="testimonial-slider">
+                <div>
+                    <img src="assets/images/testimoni1.jpeg" alt="Testimoni 1">
+                </div>
+                <div>
+                    <img src="assets/images/testimoni2.jpeg" alt="Testimoni 2">
+                </div>
+                <div>
+                    <img src="assets/images/testimoni3.jpeg" alt="Testimoni 3">
+                </div>
+                <div>
+                    <img src="assets/images/testimoni4.jpeg" alt="Testimoni 4">
+                </div>
+                <div>
+                    <img src="assets/images/testimoni5.jpeg" alt="Testimoni 5">
+                </div>
+            </div>
+            <div class="testimonial-link">
+                <a href="https://x.com/SyahalMaulana15/status/1929484359100145887?s=20" target="_blank">
+                    <i class="fas fa-comments"></i> Lihat Testimoni Lainnya
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak">
+        <div class="container text-center">
+            <h2 class="section-title">Hubungi Kami</h2>
+            <p class="mb-4">Butuh bantuan atau ada pertanyaan? Hubungi kami melalui:</p>
+            <div>
+                <a href="https://twitter.com/SyahalMaulana15" target="_blank" class="contact-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://wa.me/6289516876075" target="_blank" class="contact-icon">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 Joki Hal. All Rights Reserved.</p>
+            <p class="mb-0">Joki Tiket JKT48 Terpercaya</p>
+        </div>
+    </footer>
+
+    <!-- Order Modal -->
+    <div class="modal fade" id="orderModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Pilih Jenis Joki</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row text-center">
+                        <div class="col-md-4 mb-3">
+                            <button class="btn btn-primary w-100" onclick="showForm('2S')">
+                                <i class="fas fa-camera"></i><br>Joki 2-Shot
+                            </button>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <button class="btn btn-primary w-100" onclick="showForm('MNG')">
+                                <i class="fas fa-handshake"></i><br>Joki Meet & Greet
+                            </button>
+                        </div>
+                        <div class="col-md-4 mb-3">
+                            <button class="btn btn-primary w-100" onclick="showForm('VC')">
+                                <i class="fas fa-video"></i><br>Joki Video Call
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Form Modal -->
+    <div class="modal fade" id="formModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="formTitle">Form Pemesanan</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="note-box">
+                        <h6><i class="fas fa-info-circle"></i> Catatan Penting:</h6>
+                        <ul class="mb-0">
+                            <li>Pastikan semua data yang diisi benar dan valid</li>
+                            <li>Pembayaran dilakukan setelah konfirmasi order</li>
+                            <li>Kami akan menghubungi Anda melalui kontak yang diberikan</li>
+                            <li>Proses joki membutuhkan waktu 1-3 hari kerja</li>
+                        </ul>
+                    </div>
+
+                    <h6 class="mb-3">Pricelist Member:</h6>
+                    <div class="mb-4">
+                        <img src="assets/images/pricelist.jpeg" class="img-fluid rounded" alt="Pricelist">
+                    </div>
+
+                    <form id="orderForm">
+                        <input type="hidden" id="jenisJoki" name="jenisJoki">
+                        
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Email *</label>
+                                <input type="email" class="form-control" id="email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Password *</label>
+                                <input type="password" class="form-control" id="password" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Username X / ID Line / Nomor WhatsApp *</label>
+                            <input type="text" class="form-control" id="username" required>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Nama Member *</label>
+                                <input type="text" class="form-control" id="namaMember" placeholder="Contoh: Freya Jayawardana" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Tanggal Acara *</label>
+                                <input type="date" class="form-control" id="tanggal" required>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Sesi *</label>
+                                <input type="text" class="form-control" id="sesi" placeholder="Contoh: Sesi 1 (10:00 - 12:00)" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Jumlah Tiket *</label>
+                                <input type="number" class="form-control" id="jumlahTiket" min="1" value="1" required>
+                            </div>
+                        </div>
+
+                        <div class="text-end">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Batal</button>
+                            <button type="submit" class="btn btn-primary" id="submitBtn">
+                                <i class="fas fa-paper-plane"></i> Kirim Pesanan
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- Slick Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="js/config.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

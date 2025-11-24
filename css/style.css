@@ -1,0 +1,374 @@
+/* ========================================
+   JOKI HAL - MAIN STYLESHEET
+   ======================================== */
+
+/* CSS Variables */
+:root {
+    --primary-red: #e31837;
+    --dark-bg: #0a0a0a;
+    --card-bg: #1a1a1a;
+    --text-light: #f5f5f5;
+}
+
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--dark-bg);
+    color: var(--text-light);
+    overflow-x: hidden;
+}
+
+/* ========================================
+   NAVBAR
+   ======================================== */
+.navbar {
+    background-color: rgba(10, 10, 10, 0.95) !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 20px rgba(227, 24, 55, 0.3);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: var(--primary-red) !important;
+}
+
+.nav-link {
+    color: var(--text-light) !important;
+    transition: color 0.3s;
+    margin: 0 10px;
+}
+
+.nav-link:hover {
+    color: var(--primary-red) !important;
+}
+
+/* ========================================
+   HERO SECTION
+   ======================================== */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(227, 24, 55, 0.2) 0%, transparent 70%);
+    top: -250px;
+    right: -250px;
+    animation: pulse 4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { 
+        transform: scale(1); 
+        opacity: 0.5; 
+    }
+    50% { 
+        transform: scale(1.2); 
+        opacity: 0.3; 
+    }
+}
+
+.hero-content {
+    text-align: center;
+    z-index: 1;
+}
+
+.logo-circle {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(135deg, var(--primary-red) 0%, #c41230 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 30px;
+    box-shadow: 0 10px 40px rgba(227, 24, 55, 0.5);
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { 
+        transform: translateY(0); 
+    }
+    50% { 
+        transform: translateY(-20px); 
+    }
+}
+
+.logo-circle h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+.slogan {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+/* ========================================
+   SECTIONS
+   ======================================== */
+section {
+    padding: 80px 0;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 2.5rem;
+    color: var(--primary-red);
+    font-weight: bold;
+}
+
+.testimoni-section {
+    background-color: #000;
+}
+
+/* ========================================
+   BUTTONS
+   ======================================== */
+.btn-primary {
+    background-color: var(--primary-red);
+    border: none;
+    padding: 12px 30px;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #c41230;
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(227, 24, 55, 0.5);
+}
+
+/* ========================================
+   SLICK SLIDER
+   ======================================== */
+.slick-slider {
+    margin: 0 -15px;
+}
+
+.slick-slide {
+    padding: 0 15px;
+}
+
+.slick-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: 2px solid rgba(227, 24, 55, 0.3);
+}
+
+.slick-prev, .slick-next {
+    width: 50px;
+    height: 50px;
+    z-index: 100;
+}
+
+.slick-prev {
+    left: -60px;
+}
+
+.slick-next {
+    right: -60px;
+}
+
+.slick-prev:before, .slick-next:before {
+    font-size: 50px;
+    color: var(--primary-red);
+    opacity: 1;
+}
+
+.slick-prev:hover:before, .slick-next:hover:before {
+    color: #c41230;
+}
+
+.slick-dots {
+    bottom: -50px;
+}
+
+.slick-dots li button:before {
+    font-size: 12px;
+    color: var(--primary-red);
+    opacity: 0.5;
+}
+
+.slick-dots li.slick-active button:before {
+    color: var(--primary-red);
+    opacity: 1;
+}
+
+.timetable-slider, .testimonial-slider {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 60px;
+}
+
+/* ========================================
+   TESTIMONIAL
+   ======================================== */
+.testimonial-link {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.testimonial-link a {
+    color: var(--primary-red);
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s;
+    display: inline-block;
+    padding: 12px 30px;
+    border: 2px solid var(--primary-red);
+    border-radius: 25px;
+}
+
+.testimonial-link a:hover {
+    background-color: var(--primary-red);
+    color: white;
+    transform: scale(1.05);
+}
+
+/* ========================================
+   CONTACT
+   ======================================== */
+.contact-icon {
+    font-size: 2rem;
+    color: var(--text-light);
+    margin: 0 15px;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.contact-icon:hover {
+    color: var(--primary-red);
+    transform: scale(1.2);
+}
+
+/* ========================================
+   FOOTER
+   ======================================== */
+footer {
+    background-color: #000;
+    padding: 40px 0 20px;
+    border-top: 2px solid var(--primary-red);
+}
+
+/* ========================================
+   MODAL
+   ======================================== */
+.modal-content {
+    background-color: var(--card-bg);
+    border: 1px solid rgba(227, 24, 55, 0.3);
+}
+
+.modal-header {
+    border-bottom: 1px solid rgba(227, 24, 55, 0.3);
+}
+
+.form-control, .form-select {
+    background-color: #0a0a0a;
+    border: 1px solid rgba(227, 24, 55, 0.3);
+    color: var(--text-light);
+}
+
+.form-control:focus, .form-select:focus {
+    background-color: #0a0a0a;
+    border-color: var(--primary-red);
+    color: var(--text-light);
+    box-shadow: 0 0 0 0.2rem rgba(227, 24, 55, 0.25);
+}
+
+.form-label {
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.note-box {
+    background-color: rgba(227, 24, 55, 0.1);
+    border-left: 4px solid var(--primary-red);
+    padding: 15px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+/* ========================================
+   ALERT
+   ======================================== */
+.alert-custom {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    z-index: 9999;
+    min-width: 300px;
+    animation: slideIn 0.5s;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(400px);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* ========================================
+   RESPONSIVE
+   ======================================== */
+@media (max-width: 768px) {
+    .slick-prev {
+        left: -25px;
+    }
+    
+    .slick-next {
+        right: -25px;
+    }
+    
+    .slick-prev:before, .slick-next:before {
+        font-size: 35px;
+    }
+    
+    .timetable-slider, .testimonial-slider {
+        padding: 0 30px;
+    }
+    
+    .logo-circle {
+        width: 150px;
+        height: 150px;
+    }
+    
+    .logo-circle h1 {
+        font-size: 2rem;
+    }
+    
+    .slogan {
+        font-size: 1.2rem;
+    }
+    
+    .section-title {
+        font-size: 2rem;
+    }
+}
