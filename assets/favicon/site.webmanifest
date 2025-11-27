@@ -1,1 +1,22 @@
 
+{
+    "name": "Joki Hal",
+    "short_name": "Joki Hal",
+    "description": "Joki Tiket VideoCall, Meet n Greet, 2-Shot JKT48",
+    "icons": [
+        {
+            "src": "/assets/favicon/favicon-32x32.png",
+            "sizes": "32x32",
+            "type": "image/png"
+        },
+        {
+            "src": "/assets/favicon/apple-touch-icon.png",
+            "sizes": "180x180",
+            "type": "image/png"
+        }
+    ],
+    "theme_color": "#e31837",
+    "background_color": "#0a0a0a",
+    "display": "standalone",
+    "start_url": "/"
+}
